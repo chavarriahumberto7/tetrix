@@ -1,0 +1,107 @@
+#score {
+    display: inline-block;
+}
+
+
+
+canvas {
+    display: block;
+    margin: 0 auto;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&family=Oswald&display=swap');
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: rgb(139, 169, 143);
+background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23000000' fill-opacity='0.15'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-weight: 700;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items:center;
+
+
+  
+}
+.saludo,.score-container{
+    font-size:2rem;
+}
+
+.canvas-container{
+  width: auto;
+  max-width: 900px;
+  padding: 20px 30px;
+  border-radious:10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow:0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.button-container,.score-container{
+  margin-top:15px;
+  display:flex;
+
+
+}
+
+
+/*Button styles */
+
+button{
+  cursor:pointer;
+  font-size:1.2rem;
+  height:2.5rem;
+  border:none;
+  border-radius:10px;
+  color:#fff;
+  background:#333;
+
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #182d5e 50%);
+  background-size: 220%;
+  transition: all 0.4s;
+  outline: none;
+  padding:0.5rem 1.8rem;
+  box-shadow:0 0.3rem rgba(121,121,121,0.65);
+
+}
+
+button:hover{
+  filter:brightness(110%);
+  background-position: 100%;
+  color: #fff;
+}
+
+button:active{
+  transform:translate(0,0.3rem);
+  box-shadow:0 0.1rem rgba(255,255,255,0.65);
+}
+
+
+/*End of styles for the buttons*/
+
+/*Loader information*/
+
+
+
+/*Media Query*/
+
+@media screen and (max-width:1000px) {
+
+  .container{
+    margin: auto 10px;
+  
+  }
+  
+  .quote-text{
+    font-size: 2.5rem;
+  }
+
+}
