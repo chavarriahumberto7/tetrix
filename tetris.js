@@ -238,6 +238,45 @@ Piece.prototype.collision = function(x,y,piece){
 
 document.addEventListener("keydown",CONTROL);
 
+
+let btn_left=document.getElementById("btn-left");
+let btn_right=document.getElementById("btn-right");
+let btn_change=document.getElementById("btn-change");
+let btn_down=document.getElementById("btn-down");
+
+
+btn_left.addEventListener("click",leftfunction);
+
+function leftfunction(){
+
+    p.moveLeft();
+    dropStart = Date.now();
+}
+
+
+btn_right.addEventListener("click",rightfunction);
+
+function rightfunction(){
+
+    p.moveRight();
+    dropStart = Date.now();
+}
+
+btn_change.addEventListener("click",changefunction);
+
+function changefunction(){
+    p.rotate();
+    dropStart = Date.now();
+}
+
+btn_down.addEventListener("click",downfunction);
+
+function downfunction(){
+    p.moveDown();
+}
+
+
+
 function CONTROL(event){
     if(event.keyCode == 37){
         p.moveLeft();
